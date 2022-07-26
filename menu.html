@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image-x/icon" rel="icon" href="images/logo.jpg"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <title>Fast Food</title>
+</head>
+<body>
+    <section class="header">
+        <div>
+            <!--contains the header pic/statement before the navbar-->
+        </div>
+        <div class="navbar" id="nav">
+            <!--contains the navbar-->
+            <div class="logo_links">
+                <!--contains the logo within the navbar-->
+                <a href="index.html"><img src="images/remlogo (2).png" alt=" " height="50px"></a>
+                <div class="resp_menu_icon">
+                    <!--contains the icon which changes the navbar onScroll or on small screen-->
+                    <a href="javascript:void(0);" class="icon" onclick="opennav()"><img src="images/menu-24.png" height="30px"></a>
+                </div>
+                <div class="links">
+                    <!--contains the navigation links in the navbar-->
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">View Menu</a>
+                    <a href="delivery.html">Delivery</a>
+                    <a href="reservation.html">Make Reservation</a>
+                </div>
+            </div>
+    </section>
+    <div class="resp_menu_links" id="resp_nav">
+        <!--contains the links within the menu which appears when the menu icon is clicked-->
+        <a href="javascript:void(0)" onclick="closenav()" class="closbtn">&times;</a>
+        <div class="content">
+            <a href="index.html">Home</a>
+            <a href="menu.html">View Menu</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="reservation.html">Make Reservation</a>
+        </div>
+    </div>
+    <div class="main_menu">
+        <div class="menu_head">
+            <h1>Menu</h1>
+        </div>
+        <div class="main_content">
+            <div class="content_left">
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/achu.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Achu</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/ackra.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Accra</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/cabbage.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Cabbage</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/cake.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Cake</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/chicken.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Chicken</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/daejae.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Poulet DG</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/doghnuts.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Doughnuts</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/ekwang.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Ekwang</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/eru.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Waterfufu & Eru</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/fishPie.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Fish Pie</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/fishroll.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Fish Roll</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/hot_pot.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Hot Pot</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/jollof.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Jollof</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/khati.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Khati-Khati</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/kokicorn.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>KokiCorn</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/kondre.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Kondre</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/kwacoco.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Kwacoco</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/Mbongho.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Mbongho chobi</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/ndole.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Ndole</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image"><img src="images/foods 2/plantain.jpg"></div>
+                    <div class="text_buts">
+                        <div class="name">
+                            <h3>Porridged Plaintains</h3>
+                        </div>
+                        <div class="buts">
+                            <button onclick="getTableNum()">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+        </div>
+        <div class="locat">
+            <!-- contain the location_image and location -->
+            <div class="locat">
+                <!-- contain the location_image and location -->
+                <img src="images\location.png" height="25px">
+                <p>Yaounde, Cameroon</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy;Fontebo Acha (all rights reserved)</p>
+        </div>
+    </footer>
+    <script src="restau.js">
+    </script>
+</body>
+</html>

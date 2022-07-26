@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image-x/icon" rel="icon" href="images/logo.jpg"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <title>Fast Food</title>
+</head>
+<body>
+    <section class="header">
+        <div>
+            <!--contains the header pic/statement before the navbar-->
+        </div>
+        <div class="navbar" id="nav">
+            <!--contains the navbar-->
+            <div class="logo_links">
+                <!--contains the logo within the navbar-->
+                <a href="index.html"><img src="images/remlogo (2).png" alt=" " height="50px"></a>
+                <div class="resp_menu_icon">
+                    <!--contains the icon which changes the navbar onScroll or on small screen-->
+                    <a href="javascript:void(0);" class="icon" onclick="opennav()"><img src="images/menu-24.png" height="30px"></a>
+                </div>
+                <div class="links">
+                    <!--contains the navigation links in the navbar-->
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">View Menu</a>
+                    <a href="delivery.html">Delivery</a>
+                    <a href="reservation.html">Make Reservation</a>
+                </div>
+            </div>
+    </section>
+    <div class="resp_menu_links" id="resp_nav">
+        <!--contains the links within the menu which appears when the menu icon is clicked-->
+        <a href="javascript:void(0)" onclick="closenav()" class="closbtn">&times;</a>
+        <div class="content">
+            <a href="index.html">Home</a>
+            <a href="menu.html">View Menu</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="reservation.html">Make Reservation</a>
+        </div>
+    </div>
+    <div class="main_about">
+        <h1>About Us</h1> 
+        <div class="about_content">
+            <p>Fast Food&reg; We make insanely tasty food, provide healthier nutrition on the go, and do it with the smallest environmental footprint possible.</p>
+            <center>
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <div class="statement">
+                        <p><span id="q_open">"</span>To enhance and educate the palate with the freshest ingredients and flavors, while suprising guests with personal care and service.<span id="q_close">"</span></p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <script src="restau.js"></script>
+</body>
+</html>
